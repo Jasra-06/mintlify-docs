@@ -1,0 +1,62 @@
+{
+  "projectType": "general",
+  "projectName": "Internship Docs",
+  "projectDescription": "A comprehensive documentation resource for interns, covering program onboarding, guidelines, resources, and best practices.",
+  "theme": "almond",
+  "primaryColor": "#4F7CFF",
+  "lightColor": "#EEF2FF",
+  "darkColor": "#1E3A8A",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "program-overview"
+        ]
+      },
+      {
+        "group": "Program Guide",
+        "pages": [
+          "guides/onboarding",
+          "guides/expectations",
+          "guides/projects",
+          "guides/mentorship"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/tools",
+          "resources/learning",
+          "resources/communication"
+        ]
+      },
+      {
+        "group": "Policies",
+        "pages": [
+          "policies/code-of-conduct",
+          "policies/attendance",
+          "policies/deliverables"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/general",
+          "faq/technical"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Step-by-step onboarding guide for new interns",
+    "Program expectations and evaluation criteria",
+    "Project guidelines and deliverable templates",
+    "Mentorship and communication best practices",
+    "Resource library for tools and learning materials",
+    "Policies on attendance, conduct, and deliverables"
+  ],
+  "publicApiSurface": []
+}

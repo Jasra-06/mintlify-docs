@@ -1,0 +1,66 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Internship Docs",
+  "theme": "almond",
+  "colors": {
+    "primary": "#4F7CFF",
+    "light": "#EEF2FF",
+    "dark": "#1E3A8A"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "get-started/welcome",
+          "get-started/about",
+          "get-started/prerequisites",
+          "get-started/resources",
+          "get-started/daily-workflow",
+          "get-started/first-week-presentation",
+          "get-started/faq",
+          "get-started/policies",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Program Guide",
+        "pages": [
+          "guides/onboarding",
+          "guides/expectations",
+          "guides/projects",
+          "guides/mentorship"
+        ]
+      },
+      {
+        "group": "Policies",
+        "pages": [
+          "policies/code-of-conduct",
+          "policies/attendance",
+          "policies/deliverables"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/general",
+          "faq/technical"
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Jasra-06/internship-docs"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/get-started/workflow",
+      "destination": "/quickstart",
+      "permanent": true
+    }
+  ]
+}

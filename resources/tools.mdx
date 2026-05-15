@@ -1,0 +1,125 @@
+---
+title: "Intern Tools Guide: Software, Access, and Setup Steps"
+description: "A guide to the tools, software, and platforms you'll use during your internship — including setup instructions and access request steps for each."
+sidebarTitle: "Tools"
+---
+
+During your internship you'll work across several platforms for communication, project management, code collaboration, and documentation. This page walks you through each tool category, explains how to get access, and gives you setup instructions for the tools you'll use every day. Start here before your first day so you're ready to contribute from the moment you join the team.
+
+<Note>
+  If any of the tools below aren't already set up for you, contact your mentor or the program coordinator through your onboarding email. Most access is provisioned within one business day of your request.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Communication" icon="message-circle" href="https://slack.com">
+    Slack or Microsoft Teams for day-to-day async messaging with your team, mentor, and fellow interns.
+  </Card>
+  <Card title="Project management" icon="layout-list" href="https://www.atlassian.com/software/jira">
+    Jira, Trello, or Asana to track tasks, sprint progress, and project milestones.
+  </Card>
+  <Card title="Version control" icon="git-branch" href="https://github.com">
+    Git and GitHub (or GitLab) for source code management, pull requests, and code review.
+  </Card>
+  <Card title="Documentation" icon="book-open" href="https://www.atlassian.com/software/confluence">
+    Confluence or Notion as the internal knowledge base where team docs and meeting notes live.
+  </Card>
+  <Card title="Development environment" icon="terminal" href="https://code.visualstudio.com">
+    VS Code as your recommended IDE, paired with your language runtime and terminal of choice.
+  </Card>
+  <Card title="Video conferencing" icon="video" href="https://zoom.us">
+    Zoom or Google Meet for standups, 1-on-1s with your mentor, and team meetings.
+  </Card>
+</CardGroup>
+
+## Communication: Slack or Microsoft Teams
+
+Your team uses Slack or Microsoft Teams for async messaging. Check your onboarding email for an invite link. After you join the workspace:
+
+- Accept the invite link and create your account using your work email address.
+- Upload a clear profile photo and fill in your role and team so colleagues can identify you.
+- Join the following channels immediately: `#general`, `#interns`, `#engineering` (or your team's channel), and `#announcements`.
+- Set your status to reflect your working hours so your team knows when you're available.
+
+Keep Slack or Teams open during working hours and aim to respond to direct messages within a few hours. For anything urgent, your mentor will tell you the best way to reach them quickly.
+
+## Project management: Jira, Trello, or Asana
+
+Your team tracks work in a project management tool. Ask your mentor which one your team uses and request access on your first day. Once you're in:
+
+- Locate the board or project space your team uses.
+- Familiarise yourself with the columns or statuses (e.g., **To Do**, **In Progress**, **Done**).
+- Update your assigned tasks each day so your mentor can see your progress without needing to ask.
+
+## Documentation: Confluence or Notion
+
+Your team's internal wiki holds architecture decisions, meeting notes, onboarding guides, and process documentation. Ask your mentor for the link to your team's space. Before writing anything new, search the existing docs — there's a good chance the answer you're looking for is already there.
+
+## Development environment: VS Code
+
+VS Code is the recommended editor for all interns unless your team specifies otherwise. Download it from [code.visualstudio.com](https://code.visualstudio.com). Install the following extensions to match your team's setup:
+
+- **ESLint** or **Pylint** (depending on your language) for linting.
+- **Prettier** for code formatting.
+- **GitLens** for inline Git history and blame.
+- Any language-specific extension your mentor recommends.
+
+## Video conferencing: Zoom or Google Meet
+
+You'll use Zoom or Google Meet for standups and 1-on-1s. Install the desktop app for the platform your team uses. Join meetings a minute early, keep your camera on by default, and mute yourself when you're not speaking. See [Communication best practices](/resources/communication) for full meeting etiquette guidance.
+
+## Setting up Git and GitHub
+
+Git is the one tool every intern needs regardless of their role. Follow these steps to get up and running before your first day.
+
+<Steps>
+  <Step title="Install Git">
+    Download and install Git from [git-scm.com](https://git-scm.com). On macOS you can also run `brew install git`. Verify the install by running:
+
+    ```bash
+    git --version
+    ```
+  </Step>
+  <Step title="Configure your identity">
+    Set your name and email address so your commits are attributed correctly. Use the same email address as your GitHub account.
+
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"
+    ```
+  </Step>
+  <Step title="Create a GitHub account">
+    Go to [github.com](https://github.com) and create a free account if you don't already have one. Use a professional username — it appears on every commit and pull request you make.
+  </Step>
+  <Step title="Add an SSH key">
+    Generate an SSH key and add it to your GitHub account so you can push code without entering your password each time.
+
+    ```bash
+    ssh-keygen -t ed25519 -C "you@example.com"
+    ```
+
+    Copy the contents of `~/.ssh/id_ed25519.pub` and paste it into **GitHub → Settings → SSH and GPG keys → New SSH key**.
+  </Step>
+  <Step title="Request repository access">
+    Ask your mentor or manager to invite you to the organisation and grant access to the repositories you'll be working on. Provide them with your GitHub username.
+  </Step>
+  <Step title="Clone your first repository">
+    Once you have access, clone the repository to your local machine:
+
+    ```bash
+    git clone git@github.com:your-org/your-repo.git
+    ```
+
+    You're ready to make your first contribution.
+  </Step>
+</Steps>
+
+## Basic Git workflow
+
+Once your environment is set up, use this workflow for every piece of work:
+
+1. Pull the latest changes from the main branch before you start: `git pull origin main`
+2. Create a new branch for your work: `git checkout -b your-name/feature-description`
+3. Make your changes, then stage and commit them: `git add .` then `git commit -m "Brief description of change"`
+4. Push your branch and open a pull request on GitHub for your mentor to review.
+
+Ask your mentor if the team uses a specific branch naming convention or commit message format — many teams enforce these automatically.
